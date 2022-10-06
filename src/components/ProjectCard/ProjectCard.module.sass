@@ -1,0 +1,64 @@
+.next
+    height: 11vh
+    width: 100%
+    background-color: green
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 32px
+    font-weight: 900
+    background-color: #f1f1f1
+.ProjectCardWrapper
+    width: 100%
+    height: 70vh
+    margin-bottom: 10vh
+    display: flex
+    .backers
+        width: 15%
+        margin-top: 5vh
+        background-color: #f1f1f1
+    .ProjectCard
+        width: 80%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .slider
+            margin-top: 15vh 
+            width: 70%
+            height: 60%
+            background-color: white
+            display: flex
+            justify-content: space-between
+            border: 4px solid black
+            box-sizing: border-box
+            background-size: contain !important
+            div
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 32px
+                font-weight: 900
+                width: 50%
+                cursor: pointer
+                transition: 0.3s
+                opacity: 0
+                color: white
+            div:hover
+                opacity: 1
+                background-color: rgba(0, 0, 0, 0.4)
+        .links
+            width: 70%
+            display: flex
+            justify-content: space-between
+            cursor: pointer
+            div
+                width: 50%
+                height: 15vh
+                background-color: white
+                transition: 0.3s
+                cursor: pointer
+            div:hover
+                background-color: rgba(0, 0, 0, 0.4)
+
