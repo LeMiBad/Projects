@@ -36,7 +36,7 @@ const ProjectCard = ({data}: ProjectCardProps) => {
                     </div>
                     <div className={css.links}>
                         <a>Подробнее</a>
-                        <a href={projectUrl}>Перейти</a>
+                        <a target='blank' href={projectUrl}>Перейти</a>
                     </div>
                 </div>
                 <div className={css.backers}></div>
