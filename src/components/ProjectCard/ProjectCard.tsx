@@ -1,10 +1,18 @@
 import { useState } from 'react'
 import css from './ProjectCard.module.sass'
 
-const ProjectCard = () => {
+interface ProjectCardProps {
+    data: {
+        projectName: string
+        projectUrl: string
+        images: Array<string>
+    }
+} 
 
+const ProjectCard = ({data}: ProjectCardProps) => {
+
+    const {projectName, projectUrl, images} = data
     const [imageIndex, setImageIndex] = useState(0)
-    const images = ['https://user-images.githubusercontent.com/97335217/183980254-11f4ba13-20a9-4d0d-9ac9-fa30685172d9.png', 'https://user-images.githubusercontent.com/97335217/183980305-f51d686b-a94e-4625-a38e-18b716030748.png']
 
     const leftSlide = () => {
         if(!imageIndex) setImageIndex(images.length-1)
@@ -18,17 +26,17 @@ const ProjectCard = () => {
 
     return (
         <>
-            <div className={css.next}>React-Game</div>
+            <div className={css.next}>{projectName}</div>
             <div className={css.ProjectCardWrapper}>
                 <div className={css.backers}></div>
                 <div className={css.ProjectCard}>
                     <div style={{ background: `url('${images[imageIndex]}')`}} className={css.slider}>
-                        <div onClick={leftSlide} className={css.left}>{'<'}</div>
-                        <div onClick={rightSlide} className={css.right}>{'>'}</div>
+                        <span onClick={leftSlide} className={css.left}>{'<'}</span>
+                        <span onClick={rightSlide} className={css.right}>{'>'}</span>
                     </div>
                     <div className={css.links}>
-                        <div>e</div>
-                        <div>e</div>
+                        <a>Подробнее</a>
+                        <a href={projectUrl}>Перейти</a>
                     </div>
                 </div>
                 <div className={css.backers}></div>
