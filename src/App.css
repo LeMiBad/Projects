@@ -5,6 +5,10 @@ html{
   height: 100vh;
   background-color: white;
 }
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 .App-logo {
   height: 40vmin;
