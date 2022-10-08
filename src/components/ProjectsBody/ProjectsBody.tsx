@@ -36,8 +36,7 @@ const ProjectsBody = () => {
         <>
             <h1 className={css.prof}>Frontend</h1>
             <h1 className={css.profTwo}>Developer</h1>
-            <ProjectCard data={projectData[0]}/>
-            <ProjectCard data={projectData[1]} />
+            {projectData.map((card, key) => <ProjectCard key={key} data={card}/>)}
         </>
     )
 }

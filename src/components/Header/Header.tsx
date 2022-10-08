@@ -5,7 +5,7 @@ const Header = () => {
         <div className={css.wrapper}>
             <div className={css.name}><span>Леонид</span><span>Михеев</span></div>
             <div className={css.face}></div>
-            <div>Some...</div>
+            <a target={'blank'} href={'https://github.com/LeMiBad'}>Git</a>
         </div>
     )
 }
