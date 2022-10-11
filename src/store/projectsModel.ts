@@ -28,6 +28,15 @@ const initialState = [
             'https://user-images.githubusercontent.com/97335217/194322454-654b6439-6dba-4522-8904-c452f0675839.png',
             'https://user-images.githubusercontent.com/97335217/194322616-784017c1-6430-4975-99a0-0a64edba6094.png',
         ]
+    },
+    {
+        projectName: 'Gallery',
+        projectUrl: 'https://lemibad.github.io/beautifulGallery/',
+        images: [
+            'https://user-images.githubusercontent.com/97335217/195083607-a3c706c6-98f3-47a9-8416-b3f42362ed07.png',
+            'https://user-images.githubusercontent.com/97335217/195083628-1a156294-40c2-4142-ab31-7df56bcb01c2.png',
+            'https://user-images.githubusercontent.com/97335217/195083652-fac15d9e-79ec-4bd8-896b-7efcf0586a25.png'
+        ]
     }
 ]
 
