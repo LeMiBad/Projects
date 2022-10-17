@@ -1,23 +1,23 @@
-import {ProjectInfo} from '../../types/types'
+import { Link } from 'react-router-dom'
+import { pickIndex } from '../../store/projectsModel'
+import {ProjectInfoProps} from '../../types/props'
 import Slider from '../Slider/Slider'
 import css from './ProjectCard.module.sass'
 
-const ProjectCard = ({data}: ProjectInfo) => {
-    const {projectName, projectUrl, images} = data
+const ProjectCard = (cardInfo: ProjectInfoProps) => {
+    const {projectName, projectUrl, images, id} = cardInfo
 
     return (
         <>
-            <div className={css.next}>{projectName}</div>
             <div className={css.ProjectCardWrapper}>
-                <div className={css.backers}></div>
                 <div className={css.ProjectCard}>
+                    <div className={css.next}>{projectName}</div>
                     <Slider images={images}/>
                     <div className={css.links}>
-                        <a href='*'>Подробнее</a>
+                        <Link onClick={() => {pickIndex(id)}}  to='/project'>Подробнее</Link>
                         <a target='blank' href={projectUrl}>Перейти</a>
                     </div>
                 </div>
-                <div className={css.backers}></div>
             </div>
         </>
     )

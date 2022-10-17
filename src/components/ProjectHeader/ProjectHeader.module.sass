@@ -1,0 +1,27 @@
+@keyframes anim
+    0%
+        left: -100%
+    100%
+        left: 100%  
+
+.wrapper
+    position: relative
+    background-color: #f1f1f1
+    height: 25vh
+    width: 100%
+    box-sizing: border-box
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    overflow-x: hidden
+    .iconsWrapper
+        position: absolute
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        animation-duration: 6s
+        animation-name: anim
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        img
+            margin-right: 30px

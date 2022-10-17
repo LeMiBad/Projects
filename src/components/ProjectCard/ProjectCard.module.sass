@@ -6,75 +6,39 @@
     div
 @media (max-width: 767px)
     .ProjectCardWrapper
-        height: 60vh !important
-        .backers
-            display: none
+        .next
+            width: 100%
         .ProjectCard
             width: 100% !important
-            .slider
-                width: 100% !important
-                height: 40% !important
-                span
-                    display: none !important
             .links
                 width: 100% !important
+                
 .next
     height: 11vh
-    width: 100%
-    background-color: green
+    width: 80%
     position: absolute
     display: flex
     justify-content: center
     align-items: center
     font-size: 32px
     font-weight: 900
+    outline: 2px solid black
     background-color: #f1f1f1
 .ProjectCardWrapper
     width: 100%
-    height: 100vh
     margin-bottom: 10vh
     display: flex
-    .backers
-        width: 15%
-        margin-top: 5vh
-        background-color: #f1f1f1
-        height: 81vh
+    justify-content: center
     .ProjectCard
         width: 80%
+        outline: 2px solid black
         display: flex
         flex-direction: column
         align-items: center
-        .slider
-            margin-top: 15vh 
-            width: 70%
-            height: 100%
-            background-color: white
-            display: flex
-            justify-content: space-between
-            border: 4px solid black
-            box-sizing: border-box
-            background-size: cover !important
-            span
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                -webkit-user-select: none;
-                user-select: none;
-                height: 100%
-                display: flex
-                justify-content: center
-                align-items: center
-                font-size: 32px
-                font-weight: 900
-                width: 50%
-                cursor: pointer
-                transition: 0.3s
-                opacity: 0
-                color: white
-            span:hover
-                opacity: 1
-                background-color: rgba(0, 0, 0, 0.4)
+        justify-content: space-between
         .links
             width: 100%
+            outline: 2px solid
             display: flex
             justify-content: space-between
             cursor: pointer
