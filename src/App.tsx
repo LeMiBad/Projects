@@ -9,8 +9,8 @@ const App = () => {
     <>
       {/* <ProjectInfo/> */}
       <Routes>
-        <Route path="/" element={<ProjectsBody />}/>
-        <Route path="/project" element={<ProjectInfo />}/>
+        <Route path="/Projects" element={<ProjectsBody />}/>
+        <Route path="/Projects/project" element={<ProjectInfo />}/>
       </Routes>
     </>
   )

@@ -14,7 +14,7 @@ const ProjectCard = (cardInfo: ProjectInfoProps) => {
                     <div className={css.next}>{projectName}</div>
                     <Slider images={images}/>
                     <div className={css.links}>
-                        <Link onClick={() => {pickIndex(id)}}  to='/project'>Подробнее</Link>
+                        <Link onClick={() => {pickIndex(id)}}  to='/Projects/project'>Подробнее</Link>
                         <a target='blank' href={projectUrl}>Перейти</a>
                     </div>
                 </div>

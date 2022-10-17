@@ -7,8 +7,8 @@ import { Link } from "react-router-dom"
 
 const ProjectInfo = () => {
     const {projectName, projectUrl, images, icons, desc} = useStore($currentProject)
+    window.scrollTo(0, 0)
 
-    console.log({projectName, projectUrl, images, icons})
     return (
         <>
             <ProjectHeader icons={icons}/>
@@ -18,7 +18,7 @@ const ProjectInfo = () => {
                 <div className={css.ProjectCard}>
                     <Slider images={images}/>
                     <div className={css.links}>
-                        <Link to={'/'}>Назад</Link>
+                        <Link to={'/Projects'}>Назад</Link>
                         <a target='blank' href={projectUrl}>Перейти</a>
                     </div>
                 </div>
