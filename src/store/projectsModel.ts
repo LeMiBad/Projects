@@ -29,6 +29,29 @@ const initialState = [
         desc: 'Это один из моих первых проектов на React, в котором я первый раз использовал стейт менеджер под названием Redux, В частности redux-toolkit. Для этой игры я придумал способ генерации игрового поля путём преобразования двухмерной матрица в jsx элементы'
     },
     {
+        projectName: 'Snake-Game',
+        projectUrl: 'https://lemibad.github.io/Snake/',
+        images: [
+            'https://user-images.githubusercontent.com/97335217/197139795-8ac36a5c-1d36-491f-b5cc-d47d070550cf.png',
+            'https://user-images.githubusercontent.com/97335217/197139824-be6670b0-7d5a-45d1-bbef-269684caf947.png',
+            'https://user-images.githubusercontent.com/97335217/197140011-67cf9565-1915-4cf3-b6ea-46b575ac47bd.png',
+            'https://user-images.githubusercontent.com/97335217/197140092-07852d7e-1d7c-43b2-99ea-eca26b292de5.png',
+            'https://user-images.githubusercontent.com/97335217/197140127-f36b8bed-80cd-4313-bb2d-db817dd5861b.png',
+        ],
+        icons: {
+            js: true,
+            react: true,
+            ts: true,
+            redux: false,
+            html: true,
+            git: true,
+            npm: true,
+            sass: true,
+            node: true,
+        },
+        desc: 'Мне кажется, что каждый программист должен когда-нибудь написать свою змейку и вот она и есть. Красивая с анимациями)'
+    },
+    {
         projectName: 'NoteBook',
         projectUrl: 'https://lemibad.github.io/NoteBook/',
         images: [
