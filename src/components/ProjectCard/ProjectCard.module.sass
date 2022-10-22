@@ -5,57 +5,46 @@
 @media (min-width: 768px) and (max-width: 991px)
     div
 @media (max-width: 767px)
-    .ProjectCardWrapper
-        .next
-            width: 100%
-        .ProjectCard
-            width: 100% !important
-            .links
-                width: 100% !important
+    .links
+        a
+            font-size: 24px !important
+
                 
-.next
-    height: 11vh
+.projectCard
     width: 80%
-    position: absolute
+    margin: 0 auto 100px auto
     display: flex
+    flex-direction: column
     justify-content: center
-    align-items: center
-    font-size: 32px
-    font-weight: 900
-    outline: 2px solid black
-    background-color: #f1f1f1
-.ProjectCardWrapper
-    width: 100%
-    margin-bottom: 10vh
-    display: flex
-    justify-content: center
-    .ProjectCard
-        width: 80%
-        outline: 2px solid black
+    .name
+        height: 11vh
+        width: 100%
         display: flex
-        flex-direction: column
+        justify-content: center
         align-items: center
+        font-size: 32px
+        font-weight: 900
+        outline: 1px solid black
+    .links
+        width: 100%
+        outline: 1px solid
+        display: flex
         justify-content: space-between
-        .links
-            width: 100%
-            outline: 2px solid
-            display: flex
-            justify-content: space-between
+        cursor: pointer
+        a
+            text-decoration: none
+            color: black
+            width: 50%
+            height: 15vh
+            transition: 0.3s
             cursor: pointer
-            a
-                text-decoration: none
-                color: black
-                width: 50%
-                height: 15vh
-                background-color: white
-                transition: 0.3s
-                cursor: pointer
-                font-size: 32px
-                font-weight: 900
-                display: flex
-                justify-content: center
-                align-items: center
-                background-color: #f1f1f1
-            a:hover
-                background-color: #858585
+            font-size: 32px
+            font-weight: 900
+            display: flex
+            justify-content: center
+            align-items: center
+        a:hover
+            background-color: #858585
+        a:nth-child(1)
+            outline: 1px solid black
 
