@@ -22,10 +22,16 @@ const ProjectCard = (cardInfo: ProjectInfoProps) => {
         return () => document.removeEventListener('scroll', scrollListener)
     }, [])
 
+
+    const animationHandler = () => {
+        if(projectName === 'React-Game') return css.enter
+        else return animation
+    }
+
     return (
         <>
-            <div ref={back} className={`${css.projectCard} ${animation}`}>
-                <div className={css.name}>{projectName}</div>
+            <div ref={back} className={`${css.projectCard} ${animationHandler()}`}>
+                <h1 className={css.name}>{projectName}</h1>
                 <Carousel infiniteLoop showStatus={false} showThumbs={false}>
                     {images.map((img, i) => <div key={i}><img alt='projectImg' src={img}></img></div>)}
                 </Carousel>

@@ -12,10 +12,11 @@
 
 @keyframes enter
     0%
-        transform: translateX(100%)
+        // transform: translateX(100%)
+        margin-left: -100vw
     100%
-        transform: translateX(0)
-        
+        // transform: translateX(0)
+        margin-left: 10vw
 .none
     opacity: 0
 
@@ -25,9 +26,14 @@
     transform-origin: right
                 
 .projectCard
+    overflow-x: hidden;
     width: 80%
     margin: 0 auto 100px auto
     display: flex
+    outline: 1px solid black
+    border-radius: 50px
+    background-color: black
+    color: white
     flex-direction: column
     justify-content: center
     .name
@@ -36,18 +42,17 @@
         display: flex
         justify-content: center
         align-items: center
+        margin: 0 
         font-size: 32px
         font-weight: 900
-        outline: 1px solid black
     .links
         width: 100%
-        outline: 1px solid
         display: flex
         justify-content: space-between
         cursor: pointer
         a
             text-decoration: none
-            color: black
+            color: white
             width: 50%
             height: 15vh
             transition: 0.3s
@@ -58,7 +63,11 @@
             justify-content: center
             align-items: center
         a:hover
-            background-color: #858585
+            background-color: rgba(255, 255, 255, 0.1)
         a:nth-child(1)
+            border-bottom-left-radius: 50px
+            outline: 1px solid black
+        a:nth-child(2)
+            border-bottom-right-radius: 50px
             outline: 1px solid black
 
