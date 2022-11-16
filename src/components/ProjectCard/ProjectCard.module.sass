@@ -1,3 +1,10 @@
+@keyframes enter
+    0%
+        transform: translateX(-100%)
+    100%
+        transform: translateX(0)
+
+
 @media (min-width: 1200px)
     div
 @media (min-width: 992px) and (max-width: 1199px)
@@ -5,18 +12,14 @@
 @media (min-width: 768px) and (max-width: 991px)
     div
 @media (max-width: 767px)
+    .projectCard
+        width: 100% !important
+        border-radius: 0 !important 
     .links
         a
             font-size: 24px !important
 
 
-@keyframes enter
-    0%
-        // transform: translateX(100%)
-        margin-left: -100vw
-    100%
-        // transform: translateX(0)
-        margin-left: 10vw
 .none
     opacity: 0
 

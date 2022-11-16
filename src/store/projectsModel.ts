@@ -4,6 +4,28 @@ import { createEvent, createStore } from "effector"
 
 const initialState = [
     {
+        projectName: 'Интернет магазин',
+        projectUrl: 'https://shop-e3nj71blm-lemibad.vercel.app/',
+        images: [
+            'https://user-images.githubusercontent.com/97335217/201265842-222c125e-8126-4c04-a27c-a9525aa38f23.png',
+            'https://user-images.githubusercontent.com/97335217/201265861-7319a122-2437-472e-bcfc-b268dba937e6.png',
+            'https://user-images.githubusercontent.com/97335217/201265914-20f30501-cb50-4694-a3fe-6e375c4cde44.png',
+            'https://user-images.githubusercontent.com/97335217/201265949-6fe8716a-0e0c-40c6-9fb6-813b0d7336a0.png',
+        ],
+        icons: {
+            js: true,
+            react: true,
+            ts: true,
+            redux: false,
+            html: true,
+            git: true,
+            npm: true,
+            sass: true,
+            node: true,
+        },
+        desc: '(В разработке) Мой коммерческий проект написанный на NextJS + React, админка будет взаимодействовать с базой данных через апи. Вёрстка, сервер, клиент, апи, адаптив, всё на мне под ключ'
+    },
+    {
         projectName: 'React-Game',
         projectUrl: 'https://lemibad.github.io/react-game/',
         images: [
