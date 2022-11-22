@@ -24,7 +24,7 @@ const ProjectCard = (cardInfo: ProjectInfoProps) => {
 
 
     const animationHandler = () => {
-        if(projectName === 'React-Game') return css.enter
+        if(cardInfo.id === 1) return css.enter
         else return animation
     }
 
@@ -35,7 +35,6 @@ const ProjectCard = (cardInfo: ProjectInfoProps) => {
                 <Carousel infiniteLoop showStatus={false} showThumbs={false}>
                     {images.map((img, i) => <div key={i}><img alt='projectImg' src={img}></img></div>)}
                 </Carousel>
-                {/* <Slider images={images}/> */}
                 <div className={css.links}>
                     <Link onClick={() => {pickIndex(id)}}  to='/Projects/project'>Подробнее</Link>
                     <a target='blank' href={projectUrl}>Перейти</a>

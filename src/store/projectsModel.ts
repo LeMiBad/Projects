@@ -4,6 +4,7 @@ import { createEvent, createStore } from "effector"
 
 const initialState = [
     {
+        id: 1,
         projectName: 'Интернет магазин',
         projectUrl: 'https://shop-e3nj71blm-lemibad.vercel.app/',
         images: [
@@ -11,6 +12,9 @@ const initialState = [
             'https://user-images.githubusercontent.com/97335217/201265861-7319a122-2437-472e-bcfc-b268dba937e6.png',
             'https://user-images.githubusercontent.com/97335217/201265914-20f30501-cb50-4694-a3fe-6e375c4cde44.png',
             'https://user-images.githubusercontent.com/97335217/201265949-6fe8716a-0e0c-40c6-9fb6-813b0d7336a0.png',
+            'https://user-images.githubusercontent.com/97335217/202561740-6ef550ef-f26c-4f7f-8938-7e690c277bc7.png',
+            'https://user-images.githubusercontent.com/97335217/202561689-457aedb4-d4aa-4db7-865a-eb1ff60cada2.png',
+            'https://user-images.githubusercontent.com/97335217/202561802-3339c6a4-d150-4669-bc09-707bdb0d0475.png',
         ],
         icons: {
             js: true,
@@ -26,6 +30,7 @@ const initialState = [
         desc: '(В разработке) Мой коммерческий проект написанный на NextJS + React, админка будет взаимодействовать с базой данных через апи. Вёрстка, сервер, клиент, апи, адаптив, всё на мне под ключ'
     },
     {
+        id: 2,
         projectName: 'React-Game',
         projectUrl: 'https://lemibad.github.io/react-game/',
         images: [
@@ -51,6 +56,7 @@ const initialState = [
         desc: 'Это один из моих первых проектов на React, в котором я первый раз использовал стейт менеджер под названием Redux, В частности redux-toolkit. Для этой игры я придумал способ генерации игрового поля путём преобразования двухмерной матрица в jsx элементы'
     },
     {
+        id: 3,
         projectName: 'Snake-Game',
         projectUrl: 'https://lemibad.github.io/Snake/',
         images: [
@@ -74,6 +80,7 @@ const initialState = [
         desc: 'Мне кажется, что каждый программист должен когда-нибудь написать свою змейку и вот она и есть. Красивая с анимациями)'
     },
     {
+        id: 4,
         projectName: 'NoteBook',
         projectUrl: 'https://lemibad.github.io/NoteBook/',
         images: [
@@ -97,6 +104,7 @@ const initialState = [
         desc: 'Этот проект я делал в качестве тестогово задания в течении конкурса в IT-компанию на позицию Frontend-developer, тут основной задачей стояло сделать авторизацию и регистрацию. Для этого я использовал стороннюю библиотеку для моковых данных и сделал API для соединения клиента с базой данных'
     },
     {
+        id: 5,
         projectName: 'Gallery',
         projectUrl: 'https://lemibad.github.io/beautifulGallery/',
         images: [

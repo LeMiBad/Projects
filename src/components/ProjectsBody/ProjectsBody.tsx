@@ -12,7 +12,7 @@ const ProjectsBody = () => {
             <Header />
             <h1 className={css.prof}>Frontend</h1>
             <h1 className={css.profTwo}>Developer</h1>
-            {projectData.map((card, key) => <ProjectCard key={key} id={key} projectName={card.projectName} icons={card.icons} projectUrl={card.projectUrl} images={card.images}/>)}
+            {projectData.map((card) => <ProjectCard key={card.id} id={card.id} projectName={card.projectName} icons={card.icons} projectUrl={card.projectUrl} images={card.images}/>)}
         </>
     )
 }
