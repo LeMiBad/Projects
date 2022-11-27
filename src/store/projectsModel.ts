@@ -5,8 +5,28 @@ import { createEvent, createStore } from "effector"
 const initialState = [
     {
         id: 1,
+        projectName: 'Диаграмма Ганта',
+        projectUrl: 'https://shop-indol-ten.vercel.app/',
+        images: [
+            'https://user-images.githubusercontent.com/97335217/204112233-8f7609df-949c-424c-884d-e4c40a4920a6.png',
+        ],
+        icons: {
+            js: true,
+            react: true,
+            ts: true,
+            redux: true,
+            html: true,
+            git: true,
+            npm: true,
+            sass: true,
+            node: true,
+        },
+        desc: '(В разработке) Диаграмма Ганта написанная на стеке React-Redux-TypeScript. Данные приходят с сервера, кастомные хуки, типы прописанные по человечески.'
+    },
+    {
+        id: 2,
         projectName: 'Интернет магазин',
-        projectUrl: 'https://shop-e3nj71blm-lemibad.vercel.app/',
+        projectUrl: 'https://shop-indol-ten.vercel.app/',
         images: [
             'https://user-images.githubusercontent.com/97335217/201265842-222c125e-8126-4c04-a27c-a9525aa38f23.png',
             'https://user-images.githubusercontent.com/97335217/201265861-7319a122-2437-472e-bcfc-b268dba937e6.png',
@@ -30,7 +50,7 @@ const initialState = [
         desc: '(В разработке) Мой коммерческий проект написанный на NextJS + React, админка будет взаимодействовать с базой данных через апи. Вёрстка, сервер, клиент, апи, адаптив, всё на мне под ключ'
     },
     {
-        id: 2,
+        id: 3,
         projectName: 'React-Game',
         projectUrl: 'https://lemibad.github.io/react-game/',
         images: [
@@ -56,7 +76,7 @@ const initialState = [
         desc: 'Это один из моих первых проектов на React, в котором я первый раз использовал стейт менеджер под названием Redux, В частности redux-toolkit. Для этой игры я придумал способ генерации игрового поля путём преобразования двухмерной матрица в jsx элементы'
     },
     {
-        id: 3,
+        id: 4,
         projectName: 'Snake-Game',
         projectUrl: 'https://lemibad.github.io/Snake/',
         images: [
@@ -80,7 +100,7 @@ const initialState = [
         desc: 'Мне кажется, что каждый программист должен когда-нибудь написать свою змейку и вот она и есть. Красивая с анимациями)'
     },
     {
-        id: 4,
+        id: 5,
         projectName: 'NoteBook',
         projectUrl: 'https://lemibad.github.io/NoteBook/',
         images: [
@@ -104,7 +124,31 @@ const initialState = [
         desc: 'Этот проект я делал в качестве тестогово задания в течении конкурса в IT-компанию на позицию Frontend-developer, тут основной задачей стояло сделать авторизацию и регистрацию. Для этого я использовал стороннюю библиотеку для моковых данных и сделал API для соединения клиента с базой данных'
     },
     {
-        id: 5,
+        id: 6,
+        projectName: 'Лендинг Fin-Kit',
+        projectUrl: '/Projects',
+        images: [
+            'https://user-images.githubusercontent.com/97335217/204112247-3dce2979-3ee7-4eff-a1c7-e91536a9141b.png',
+            'https://user-images.githubusercontent.com/97335217/204112250-8f77b959-1518-4c78-b987-01908581e85f.png',
+            'https://user-images.githubusercontent.com/97335217/204112267-a494cd00-2063-4b3a-beef-b75f35a0c04e.png',
+            'https://user-images.githubusercontent.com/97335217/204112272-87af4d21-1254-4508-87fd-6b7e013ad14e.png',
+            'https://user-images.githubusercontent.com/97335217/204112277-3c1d3b28-24d8-43be-97cd-9b238ac2e2d6.png',
+        ],
+        icons: {
+            js: false,
+            react: false,
+            ts: false,
+            redux: false,
+            html: true,
+            git: true,
+            npm: false,
+            sass: true,
+            node: false,
+        },
+        desc: 'Одно из заданий для попадания на позицию Frontend-developer, просто адаптивная вёрстка'
+    },
+    {
+        id: 7,
         projectName: 'Gallery',
         projectUrl: 'https://lemibad.github.io/beautifulGallery/',
         images: [

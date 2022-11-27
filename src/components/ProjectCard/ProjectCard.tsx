@@ -36,7 +36,7 @@ const ProjectCard = (cardInfo: ProjectInfoProps) => {
                     {images.map((img, i) => <div key={i}><img alt='projectImg' src={img}></img></div>)}
                 </Carousel>
                 <div className={css.links}>
-                    <Link onClick={() => {pickIndex(id)}}  to='/Projects/project'>Подробнее</Link>
+                    <Link onClick={() => {pickIndex(id-1)}}  to='/Projects/project'>Подробнее</Link>
                     <a target='blank' href={projectUrl}>Перейти</a>
                 </div>
             </div>
