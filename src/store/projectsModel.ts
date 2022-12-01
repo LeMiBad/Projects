@@ -5,6 +5,30 @@ import { createEvent, createStore } from "effector"
 const initialState = [
     {
         id: 1,
+        projectName: 'Pixo',
+        projectUrl: 'https://lemibad.github.io/Pixo/',
+        images: [
+            'https://user-images.githubusercontent.com/97335217/204952690-21c200c3-a662-4e4f-a96b-f0570a51b578.png',
+            'https://user-images.githubusercontent.com/97335217/204936513-b0d81df8-9652-483a-8216-7a339899d715.png',
+            'https://user-images.githubusercontent.com/97335217/204962729-8a85f140-2545-498a-bd39-887812170ead.png',
+            'https://user-images.githubusercontent.com/97335217/204965170-877cd3f9-a935-4e09-841e-17bd63b2e30c.png',
+            'https://user-images.githubusercontent.com/97335217/205023328-72f78387-70c5-4b31-9dcf-1d7d81e3b55b.png',
+        ],
+        icons: {
+            js: true,
+            react: true,
+            ts: true,
+            redux: false,
+            html: true,
+            git: true,
+            npm: true,
+            sass: true,
+            node: true,
+        },
+        desc: 'Pixo - приложения для pixel арта, есть возможность добавлять цвета, изменять размер полотна, красивый и анимированный предпоказ картинки'
+    },
+    {
+        id: 2,
         projectName: 'Диаграмма Ганта',
         projectUrl: 'https://shop-indol-ten.vercel.app/',
         images: [
@@ -24,7 +48,7 @@ const initialState = [
         desc: '(В разработке) Диаграмма Ганта написанная на стеке React-Redux-TypeScript. Данные приходят с сервера, кастомные хуки, типы прописанные по человечески.'
     },
     {
-        id: 2,
+        id: 3,
         projectName: 'Интернет магазин',
         projectUrl: 'https://shop-indol-ten.vercel.app/',
         images: [
@@ -50,7 +74,7 @@ const initialState = [
         desc: '(В разработке) Мой коммерческий проект написанный на NextJS + React, админка будет взаимодействовать с базой данных через апи. Вёрстка, сервер, клиент, апи, адаптив, всё на мне под ключ'
     },
     {
-        id: 3,
+        id: 4,
         projectName: 'React-Game',
         projectUrl: 'https://lemibad.github.io/react-game/',
         images: [
@@ -76,7 +100,7 @@ const initialState = [
         desc: 'Это один из моих первых проектов на React, в котором я первый раз использовал стейт менеджер под названием Redux, В частности redux-toolkit. Для этой игры я придумал способ генерации игрового поля путём преобразования двухмерной матрица в jsx элементы'
     },
     {
-        id: 4,
+        id: 5,
         projectName: 'Snake-Game',
         projectUrl: 'https://lemibad.github.io/Snake/',
         images: [
@@ -100,7 +124,7 @@ const initialState = [
         desc: 'Мне кажется, что каждый программист должен когда-нибудь написать свою змейку и вот она и есть. Красивая с анимациями)'
     },
     {
-        id: 5,
+        id: 6,
         projectName: 'NoteBook',
         projectUrl: 'https://lemibad.github.io/NoteBook/',
         images: [
@@ -124,7 +148,7 @@ const initialState = [
         desc: 'Этот проект я делал в качестве тестогово задания в течении конкурса в IT-компанию на позицию Frontend-developer, тут основной задачей стояло сделать авторизацию и регистрацию. Для этого я использовал стороннюю библиотеку для моковых данных и сделал API для соединения клиента с базой данных'
     },
     {
-        id: 6,
+        id: 7,
         projectName: 'Лендинг Fin-Kit',
         projectUrl: '/Projects',
         images: [
@@ -148,7 +172,7 @@ const initialState = [
         desc: 'Одно из заданий для попадания на позицию Frontend-developer, просто адаптивная вёрстка'
     },
     {
-        id: 7,
+        id: 8,
         projectName: 'Gallery',
         projectUrl: 'https://lemibad.github.io/beautifulGallery/',
         images: [
